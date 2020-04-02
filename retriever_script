@@ -1,0 +1,11 @@
+#!/bin/bash
+
+module load trf/4.09
+module load python/anaconda/3.6.4
+module load hmmer/3.1b2
+module load repeatmasker/4.0.6
+module load cdhit/4.7
+module load ncbi-blast/2.2.31+
+
+
+/home/olo0002/LTR_retriever_v.8.2/LTR_retriever/LTR_retriever -genome genome.final.fa -infinder Lamel.finder.scn -inharvest Lamel.harvest.scn -nonTGCA Lamel.harvest.nonTGCA.scn -threads 10
