@@ -35,3 +35,6 @@ gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 
 gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 4 -maxtsd 6 -similar 85 -vic 10 -seed 20 > $infile.harvest.nonTGCA.scn
 
 ltr_finder -D 15000 -d 1000 -l 100 -L 7000 -p 20 -C -M 0.85 $infile > $infile.finder.scn
+
+#Test to see if you can run a script within a script
+./test.script.bash
