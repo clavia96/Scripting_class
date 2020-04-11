@@ -1,7 +1,5 @@
 #!/bin/bash
 
-module load anaconda/3-2020.02
-
 #use user input and strip white space
 if [[ $# -ne 1 ]]; then
  echo "Usage: filetest filename"
@@ -30,11 +28,19 @@ case "$ext" in
     ;;
 esac
 
+module load genometools/1.6.1
+
+
 gt suffixerator -db $infile -indexname $infile -tis -suf -lcp -des -ssp -sds -dna
 gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 4 -maxtsd 6 -similar 85 -vic 10 -seed 20 -motif TGCA -motifmis 1 > $infile.harvest.scn
 gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 4 -maxtsd 6 -similar 85 -vic 10 -seed 20 > $infile.harvest.nonTGCA.scn
 
+module load anaconda/3-2020.02
 ltr_finder -D 15000 -d 1000 -l 100 -L 7000 -p 20 -C -M 0.85 $infile > $infile.finder.scn
 
-#Test to see if you can run a script within a script
-./test.script.bash
+module load perl/5.24.0
+module load anaconda/2-5.0.1
+./LTR_retriever -genome $infile -infinder $infile.finder.scn -inharvest $infile.harvest.scn -nonTGCA $infile.harvest.nonTGCA.scn -threads 10
+awk '{if ($1~/[0-9]+/) print $10"\t"$1}' $infile.pass.list >  $infile.pass.list.extract
+perl call_seq_by_list.pl $infile.pass.list.extract -C $infile > $infile.fasta
+
