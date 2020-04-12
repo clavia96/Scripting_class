@@ -1,14 +1,15 @@
 #!/bin/bash
 
+#help function
 Help ()
 {
-echo "Use to create table containing LTR retrotransposons, as well as thier clade and protein domains."
-echo "Must input fasta file and either a gydb or redexb database."
-echo "Database with greater than 20 threads is preferable."
-echo "Usage: filetest filename"
+printf "Syntax: filetest filename\n"
+printf "Use to create table containing LTR retrotransposons, \nas well as thier clade and protein domains."
+printf "\nMust input filetest: fasta file and filename: a gydb or redexb database."
+printf "\nDatabase with greater than 20 threads is preferable.\n"
 }
 
-#if ${1}='-h'; then
+#creating -h option
 while getopts ":h" option; do
     case $option in
         h)
@@ -20,7 +21,8 @@ done
 #use user input and strip white space
 #changed number of parameters to 2
 if [[ $# -ne 2 ]]; then
- echo "Usage: filetest filename"
+    echo "Error: must input parameters filetest and filename"
+    echo "./Script.bash -h for more information"
 fi
 
 file=${1}
@@ -30,6 +32,7 @@ infile=$(echo $file | tr -d ' ')
 #check if file exist
 if [ ! -f "$infile" ]; then
     echo "Error: $infile does not exist in path"
+    echo "./Script.bash -h for more information"
     exit 0
 fi
 
@@ -41,6 +44,7 @@ case "$ext" in
     ;;
 *)
     echo "Error: File must be in fasta format!!"
+    echo "./Script.bash -h for more information"
     exit 0
     ;;
 esac
