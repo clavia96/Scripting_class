@@ -51,11 +51,14 @@ esac
 
 module load genometools/1.6.1
 
+#suffixerator creates an index with categories indicated as option flags
+#ltrharvest -index is comprised of suf, lcp, des, and tis
 
 gt suffixerator -db $infile -indexname $infile -tis -suf -lcp -des -ssp -sds -dna
 gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 4 -maxtsd 6 -similar 85 -vic 10 -seed 20 -motif TGCA -motifmis 1 > $infile.harvest.scn
 gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 4 -maxtsd 6 -similar 85 -vic 10 -seed 20 > $infile.harvest.nonTGCA.scn
 
+#both ltrfinder and ltr retriever help identify for LTR retrotransposons in large sets of data
 module load anaconda/3-2020.02
 ltr_finder -D 15000 -d 1000 -l 100 -L 7000 -p 20 -C -M 0.85 $infile > $infile.finder.scn
 
