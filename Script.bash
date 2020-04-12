@@ -1,9 +1,26 @@
 #!/bin/bash
 
+Help ()
+{
+echo "Use to create table containing LTR retrotransposons, as well as thier clade and protein domains."
+echo "Must input fasta file and either a gydb or redexb database."
+echo "Database with greater than 20 threads is preferable."
+echo "Usage: filetest filename"
+}
+
+#if ${1}='-h'; then
+while getopts ":h" option; do
+    case $option in
+        h)
+            Help
+            exit;;
+    esac
+done
+
 #use user input and strip white space
-if [[ $# -ne 1 ]]; then
+#changed number of parameters to 2
+if [[ $# -ne 2 ]]; then
  echo "Usage: filetest filename"
-        exit 1
 fi
 
 file=${1}
