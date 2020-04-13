@@ -3,9 +3,9 @@
 #help function
 Help ()
 {
-printf "Syntax: filetest filename\n"
+printf "Syntax: filetest filename database\n"
 printf "Use to create table containing LTR retrotransposons, \nas well as thier clade and protein domains."
-printf "\nMust input filetest: fasta file and filename: a gydb or redexb database."
+printf "\nMust input filename: fasta file and database: a gydb or redexb database."
 printf "\nDatabase with greater than 20 threads is preferable.\n"
 }
 
@@ -21,7 +21,7 @@ done
 #use user input and strip white space
 #changed number of parameters to 2
 if [[ $# -ne 2 ]]; then
-    echo "Error: must input parameters filetest and filename"
+    echo "Error: must input parameters filename and genome"
     echo "./Script.bash -h for more information"
 fi
 
