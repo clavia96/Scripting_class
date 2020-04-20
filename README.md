@@ -15,7 +15,7 @@ for Scripting for Biologists Spring 2020
 
 ### Installation ###
 
-Dependencies: ncbi-blast, hmmer, python2.7, parallel python, biopython, genometools/1.6.1,repeatmasker,CDhit,tandem repeat finder and perl/5.24.0
+Dependencies: ncbi-blast, hmmer, python2.7, parallel python, biopython, genometools/1.6.1, repeatmasker, CDhit, tandem repeat finder and perl/5.24.0
 
 All Dependencies required for this script has been called in the script for hopper users, hence calling them seperately is not necessary. 
 However, for ASC users, this dependencies will need to be manually edited in the LTR.sh script.
@@ -23,6 +23,8 @@ However, for ASC users, this dependencies will need to be manually edited in the
 To edit the dependencies modules:
 + Edit the paths file to the corresponding file location on ASC.
 + Replace the Modules called in the script with the corresponding module name on ASC.
+
+ASC dependencies are similar to HOPPER dependencies. However, ncbi-blast will need to be printed as blast+ in this case, and anaconda environments will need to be loaded. These environments are “anaconda/3-2020.02” and “anaconda/2-5.0.1”, and should include the other dependencies necessary for running the script.
 
 ### Usage ### 
 
