@@ -10,7 +10,7 @@
 
 ### Introduction ###
 
-This is a combination of programs used to annotate and classify LTR retrotransposons in a genome.
+This is a combination of programs used to annotate and classify the LTR retrotransposons in a genome.
 
 Created by Oluchi Oyekwe, Beatrice Severance, and Jennifer Jones
 for Scripting for Biologists Spring 2020
@@ -41,16 +41,21 @@ Usage: LTR.bash -f {filename} -db {database} -t {no. of threads}
 
 -db DATABASE    input one of these - rexdb, rexdb-plant, rexdb-metazoa, gydb [required].
 
--t THREADS      number of processors to use, number between 20 - 30 is preferable [required].
+-t  THREADS      number of processors to use, number between 20 - 30 is preferable [required].
 
 -h              show this help message and exit
 
+```
+Steps to run this script
+
++  Git clone this repository.
++  Copy the desired genome fasta file to the working directory containing this Github repo.
++  Edit the RunLTR.sh and input the parameters as stated above.
++  Submit to the queue.
 
 All parameters must be correctly placed for script to work!!
 
-To submit this script on a queue, you can edit the RunLTR.sh script and submit to the queue.
-
-```
+NB : We STRONGLY advise you submit to the queue as genome files maybe too large to run directly on the node!!.
 
 ### Output ###
 
