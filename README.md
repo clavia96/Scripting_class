@@ -71,7 +71,7 @@ Classified_LTRs.gff3                    LTRs domain annotation in 'gff3' format
 
 To test this script, user can use the test.nonLTR.fasta or the Arabidopsis genome file.
 
-The test.nonLTR.fasta is a genome without LTR-RT while Arabidopsis thaliana genome contains LTR-RT
+The test.noLTR.fasta is a genome without LTR-RT while Arabidopsis thaliana genome contains LTR-RT.
 
 
 ### Citations ###
