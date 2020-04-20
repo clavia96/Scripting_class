@@ -1,0 +1,122 @@
+#!/bin/bash
+
+#help function
+Help ()
+{
+printf "This script is used to annotate and classify LTR retrotransposons.\n\n"
+printf "Usage: Script.bash -f {filename} -db {database} -t {no. of threads}\n\n"
+printf " -f FILENAME       input TE sequences in fasta format with either .fasta, .faa, .fas, .fna or .afasta extension [required].\n"
+printf "\n-db DATABASE     input one of these - rexdb, rexdb-plant, rexdb-metazoa, gydb [required].\n"
+printf "\n-t THREADS      number of processors to use, number between 20 - 30 is preferable [required].\n"
+}
+
+while getopts f:db:t:h option
+do
+case "${option}"
+in
+f) Filename=${OPTARG};;
+db) database=${OPTARG};;
+t) threads=${OPTARG};;
+h) Help
+   exit;;
+
+esac
+done
+
+#use user input and strip white space
+#changed number of parameters to 3
+if [ $# -ne 6 ]; then
+    echo "Error: must input parameters correctly"
+    echo "./Script.bash -h for more information"
+fi
+
+file=${2}
+infile=$(echo $file | tr -d ' ')
+
+#check if file exist
+if [ ! -f "$infile" ]; then
+    echo "Error: $infile does not exist in path"
+    echo "./Script.bash -h for more information"
+    exit 0
+fi
+
+ext="${infile##*.}"
+case "$ext" in
+"fa"|"fas"|"fasta"|"fna"|"faa"|"afasta")
+    ;;
+*)
+    echo "Error: File must be in fasta format!!"
+    echo "./Script.bash -h for more information"
+    exit 0
+    ;;
+esac
+
+database=${4}
+case "$database" in
+"gydb"|"rexdb"|"rexdb-plant"|"rexdb-metazoa")
+    ;;
+*)
+    echo "Database unknown"
+    echo "./Script.bash -h for more information"
+    exit 0
+    ;;
+esac
+
+thread=${6}
+if [ "$thread" != 20 ] && [ "$thread" -le 60 ]; then
+     echo "thread should be a number between 20 and 60"
+      exit 0
+fi
+
+echo "All parameters met!"
+
+#suffixerator creates an index with categories indicated as option flags
+#ltrharvest -index is comprised of suf, lcp, des, and tis
+
+module load genometools/1.6.1
+
+gt suffixerator -db $infile -indexname $infile -tis -suf -lcp -des -ssp -sds -dna
+gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 4 -maxtsd 6 -similar 85 -vic 10 -seed 20 -motif TGCA -motifmis 1 > $infile.harvest.scn
+gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 4 -maxtsd 6 -similar 85 -vic 10 -seed 20 > $infile.harvest.nonTGCA.scn
+
+module load perl/5.26.1
+module load ltrfinder/1.07
+
+perl LTR_FINDER_parallel -seq $infile -harvest_out -threads $thread
+
+cat $infile.harvest.scn $infile.finder.combine.scn >> $infile.harvest.combine.scn
+
+
+module load trf/4.09
+
+./LTR_retriever -genome $infile -inharvest $infile.harvest.combine.scn -nonTGCA $infile.harvest.nonTGCA.scn -threads $thread -noanno
+
+if [ -s "$infile.pass.list" ]
+then
+    echo "LTR-RT found in Genome!!"
+else
+    echo "No LTR-RT found in genome!!"
+    rm Tpases*
+    rm alluni*
+    rm $infile.*
+    rm -rf LTRretriever-pre04*
+    exit 0
+fi
+
+awk '{if ($1~/[0-9]+/) print $10"\t"$1}' $infile.pass.list >  $infile.pass.list.extract
+perl call_seq_by_list.pl $infile.pass.list.extract -C $infile > $infile.fasta
+
+rm $infile.nmtf*
+rm -rf LTRretriever-pre04*
+
+module load python/2.7.15
+module load hmmer/3.1b2
+module load ncbi-blast/2.2.31
+
+python ~/Scripting_class/TEsorter/TEsorter.py -db $database -st nucl -p $thread $infile.fasta
+
+mv $infile.fasta.$database.cls.tsv Classified_LTRs.tsv
+mv $infile.fasta.$database.dom.gff3 Classified_LTRs.gff3
+
+rm $infile.*
+rm -rf tmp
