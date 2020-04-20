@@ -1,17 +1,73 @@
-# LTR Retrotransposon Annotation Pipeline
+## Table of Contents
+
+   * [Introduction](#introduction)
+   * [Installation](#installation)
+   * [Usage](#usage)
+   * [Outputs](#outputs)
+   * [Citations](#citations)
+
+### Introduction ###
+
+This is a combination of programs used to annotate and classify LTR retrotransposons in a genome.
 
 Created by Oluchi Oyekwe, Beatrice Severance, and Jennifer Jones
 for Scripting for Biologists Spring 2020
 
-Required Modules: ncbi-blast, hmmer, python3, anaconda/3-2020.02, genometools/1.6.1, anaconda/2-5.0.1, perl/5.24.0
-(NOTE: modules are called in the script, calling them separately is not necessary)
+### Installation ###
 
-All required modules are avaliable on the ASC as of 4/15/2020.
+Dependencies: ncbi-blast, hmmer, python2.7, parallel python, biopython, genometools/1.6.1,repeatmasker,CDhit,tandem repeat finder and perl/5.24.0
 
-To use, call Script.bash filename database number_of_threads
+All Dependencies required for this script has been called in the script for hopper users, hence calling them seperately is not necessary. 
+However, for ASC users, this dependencies will need to be manually edited in the LTR.sh script.
 
-Filename should contain a sequence in fasta format with an extension of either fa, fas, fasta, fna, faa, or afasta.
+To edit the dependencies modules:
++ Edit the paths file to the corresponding file location on ASC.
++ Replace the Modules called in the script with the corresponding module name on ASC.
 
-Database should be in either gydb or redexb format. 
+### Usage ### 
 
-The number of threads is preferably greater than 20.
+```
+$ bash LTR.sh -h
+
+This script is used to annotate and classify LTR retrotransposons.
+
+Usage: LTR.bash -f {filename} -db {database} -t {no. of threads}
+
+ -f FILENAME    input TE sequences in fasta format with either .fasta, .faa, .fas, .fna or .afasta extension [required].
+
+-db DATABASE    input one of these - rexdb, rexdb-plant, rexdb-metazoa, gydb [required].
+
+-t THREADS      number of processors to use, number between 20 - 30 is preferable [required].
+
+-h              show this help message and exit
+
+
+All parameters must be correctly placed for script to work!!
+
+To submit this script on a queue, you can edit the RunLTR.sh script and submit to the queue.
+
+```
+
+### Output ###
+
+```
+Classified_LTRs.tsv                      LTRs classification
+    Column 1: raw id
+    Column 2: Order, i.e. LTR
+    Column 3: Superfamily, e.g. Copia
+    Column 4: Clade, e.g. SIRE
+    Column 5: Complete, "yes" means one LTR Copia/Gypsy element with full GAG-POL domains.
+    Column 6: Strand, + or - or ?
+    Column 7: Domains, e.g. GAG|SIRE PROT|SIRE INT|SIRE RT|SIRE RH|SIRE; `none` for pass-2 classifications
+
+Classified_LTRs.gff3                    LTRs domain annotation in 'gff3' format
+
+```
+### Citations ###
+
+This Script is a combination of the following programs
+
++    LTRharvest            (https://github.com/genometools/genometools)
++    LTR_finder_parallel   (https://github.com/oushujun/LTR_FINDER_parallel)
++    LTR_retriever         (https://github.com/oushujun/LTR_retriever)
++    TEsorter              (https://github.com/zhangrengang/TEsorter)
