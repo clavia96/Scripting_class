@@ -10,6 +10,7 @@ printf "\n-db DATABASE     input one of these - rexdb, rexdb-plant, rexdb-metazo
 printf "\n-t THREADS      number of processors to use, number between 20 - 30 is preferable [required].\n"
 }
 
+#reads flags and assigns inputs to variables
 while getopts f:db:t:h option
 do
 case "${option}"
@@ -24,7 +25,7 @@ esac
 done
 
 #use user input and strip white space
-#changed number of parameters to 3
+#changed number of parameters to 3 
 if [ $# -ne 6 ]; then
     echo "Error: must input parameters correctly"
     echo "./Script.bash -h for more information"
@@ -40,6 +41,7 @@ if [ ! -f "$infile" ]; then
     exit 0
 fi
 
+#confirms that the file is in fasta format and has correct extension
 ext="${infile##*.}"
 case "$ext" in
 "fa"|"fas"|"fasta"|"fna"|"faa"|"afasta")
@@ -51,6 +53,7 @@ case "$ext" in
     ;;
 esac
 
+#confirms that the database is in the correct format
 database=${4}
 case "$database" in
 "gydb"|"rexdb"|"rexdb-plant"|"rexdb-metazoa")
@@ -62,6 +65,7 @@ case "$database" in
     ;;
 esac
 
+#confirms that the thread is the correct length (20<thread<60)
 thread=${6}
 if [ "$thread" != 20 ] && [ "$thread" -le 60 ]; then
      echo "thread should be a number between 20 and 60"
@@ -82,15 +86,17 @@ gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 
 module load perl/5.26.1
 module load ltrfinder/1.07
 
+#uses LTR finder to split sequence into threads and placing them into .scn file
 perl LTR_FINDER_parallel -seq $infile -harvest_out -threads $thread
 
 cat $infile.harvest.scn $infile.finder.combine.scn >> $infile.harvest.combine.scn
 
-
+#ltr retriever is used to identify the LTR retrotransposons in the .scn file
 module load trf/4.09
 
 ./LTR_retriever -genome $infile -inharvest $infile.harvest.combine.scn -nonTGCA $infile.harvest.nonTGCA.scn -threads $thread -noanno
 
+#if there are LTR-RT found it continues, if not it exits
 if [ -s "$infile.pass.list" ]
 then
     echo "LTR-RT found in Genome!!"
@@ -106,6 +112,7 @@ fi
 awk '{if ($1~/[0-9]+/) print $10"\t"$1}' $infile.pass.list >  $infile.pass.list.extract
 perl call_seq_by_list.pl $infile.pass.list.extract -C $infile > $infile.fasta
 
+#removing files
 rm $infile.nmtf*
 rm -rf LTRretriever-pre04*
 
@@ -113,10 +120,13 @@ module load python/2.7.15
 module load hmmer/3.1b2
 module load ncbi-blast/2.2.31
 
+#calling python and classifying the LTR-RT for the output files
 python ~/Scripting_class/TEsorter/TEsorter.py -db $database -st nucl -p $thread $infile.fasta
 
+#creating final output files
 mv $infile.fasta.$database.cls.tsv Classified_LTRs.tsv
 mv $infile.fasta.$database.dom.gff3 Classified_LTRs.gff3
 
+#removing original files
 rm $infile.*
 rm -rf tmp
