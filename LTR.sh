@@ -76,8 +76,7 @@ fi
 echo "All parameters met!"
 
 #suffixerator creates an index for LTRharvest
-#ltrharvest -index is comprised of suf, lcp, des, and tis
-#LTRharvest detects LTR-RT in genome and place in .scn file
+#LTRharvest and LTR_finder detect all possible LTR-RT in genome
 
 module load genometools/1.6.1
 
@@ -88,7 +87,6 @@ gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 
 module load perl/5.26.1
 module load ltrfinder/1.07
 
-#uses LTR finder to detect LTR-RT in genome and places in .scn file
 perl LTR_FINDER_parallel -seq $infile -harvest_out -threads $thread
 
 #combines all .scn file
