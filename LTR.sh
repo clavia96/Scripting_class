@@ -7,7 +7,7 @@ printf "This script is used to annotate and classify LTR retrotransposons.\n\n"
 printf "Usage: Script.bash -f {filename} -db {database} -t {no. of threads}\n\n"
 printf " -f FILENAME       input TE sequences in fasta format with either .fasta, .faa, .fas, .fna or .afasta extension [required].\n"
 printf "\n-db DATABASE     input one of these - rexdb, rexdb-plant, rexdb-metazoa, gydb [required].\n"
-printf "\n-t THREADS      number of processors to use, number between 20 - 30 is preferable [required].\n"
+printf "\n-t  THREADS      number of processors to use, number between 20 - 30 is preferable [required].\n"
 }
 
 #reads flags and assigns inputs to variables
@@ -24,17 +24,18 @@ h) Help
 esac
 done
 
-#use user input and strip white space
-#changed number of parameters to 3 
+
+#Confirm if all parameters are present
 if [ $# -ne 6 ]; then
     echo "Error: must input parameters correctly"
     echo "./Script.bash -h for more information"
 fi
 
+#use user input and strip white space from file name
 file=${2}
 infile=$(echo $file | tr -d ' ')
 
-#check if file exist
+#check if file exist in path
 if [ ! -f "$infile" ]; then
     echo "Error: $infile does not exist in path"
     echo "./Script.bash -h for more information"
@@ -74,8 +75,9 @@ fi
 
 echo "All parameters met!"
 
-#suffixerator creates an index with categories indicated as option flags
+#suffixerator creates an index for LTRharvest
 #ltrharvest -index is comprised of suf, lcp, des, and tis
+#LTRharvest detects LTR-RT in genome and place in .scn file
 
 module load genometools/1.6.1
 
@@ -86,17 +88,19 @@ gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 
 module load perl/5.26.1
 module load ltrfinder/1.07
 
-#uses LTR finder to split sequence into threads and placing them into .scn file
+#uses LTR finder to detect LTR-RT in genome and places in .scn file
 perl LTR_FINDER_parallel -seq $infile -harvest_out -threads $thread
 
+#combines all .scn file
 cat $infile.harvest.scn $infile.finder.combine.scn >> $infile.harvest.combine.scn
 
-#ltr retriever is used to identify the LTR retrotransposons in the .scn file
+#ltr retriever is used to filter out false positive LTR-RT in the .scn files and outputs intact elements.
+
 module load trf/4.09
 
 ./LTR_retriever -genome $infile -inharvest $infile.harvest.combine.scn -nonTGCA $infile.harvest.nonTGCA.scn -threads $thread -noanno
 
-#if there are LTR-RT found it continues, if not it exits
+#if there are intact LTR-RT found it continues, if not it exits
 if [ -s "$infile.pass.list" ]
 then
     echo "LTR-RT found in Genome!!"
@@ -109,6 +113,7 @@ else
     exit 0
 fi
 
+#extracts fasta sequences of the intact elements list
 awk '{if ($1~/[0-9]+/) print $10"\t"$1}' $infile.pass.list >  $infile.pass.list.extract
 perl call_seq_by_list.pl $infile.pass.list.extract -C $infile > $infile.fasta
 
@@ -120,7 +125,7 @@ module load python/2.7.15
 module load hmmer/3.1b2
 module load ncbi-blast/2.2.31
 
-#calling python and classifying the LTR-RT for the output files
+#calling TEsorter to classify the intact LTR-RT
 python ~/Scripting_class/TEsorter/TEsorter.py -db $database -st nucl -p $thread $infile.fasta
 
 #creating final output files
