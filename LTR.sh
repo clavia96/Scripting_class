@@ -132,6 +132,6 @@ python ~/Scripting_class/TEsorter/TEsorter.py -db $database -st nucl -p $thread 
 mv $infile.fasta.$database.cls.tsv Classified_LTRs.tsv
 mv $infile.fasta.$database.dom.gff3 Classified_LTRs.gff3
 
-#removing original files
+#removing intermediate files
 rm $infile.*
 rm -rf tmp
