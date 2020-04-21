@@ -57,7 +57,7 @@ All parameters must be correctly placed for script to work!!
 
 NB : We STRONGLY advise you submit to the queue as genome files maybe too large to run directly on the node!!.
 
-### Output ###
+### Outputs ###
 
 ```
 Classified_LTRs.tsv                      LTRs classification
