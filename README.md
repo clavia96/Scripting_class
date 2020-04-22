@@ -28,6 +28,8 @@ To edit the dependencies modules:
 
 ASC dependencies are similar to HOPPER dependencies. However, ncbi-blast will need to be printed as blast+ in this case, and anaconda environments will need to be loaded. These environments are “anaconda/3-2020.02” and “anaconda/2-5.0.1”, and should include the other dependencies necessary for running the script.
 
+NB : This script was unable to be fully run on the ASC due to the necessity of the biopython dependency being unavailable. Load the "anaconda/3-2020.02" environment and call Perl to successfully run LTRharvest and LTR_finder on the ASC.
+
 ### Usage ### 
 
 ```
