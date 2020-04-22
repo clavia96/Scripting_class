@@ -74,13 +74,15 @@ Classified_LTRs.tsv                      LTRs classification
 Classified_LTRs.gff3                    LTRs domain annotation in 'gff3' format
 
 ```
-If you are not able to run this script see the directory "Example Scripts" for example output. 
+If you are not able to run this script see the directory "Example_Files" for example output. 
 
 ### Test-Files ###
 
 To test this script, user can use the test.noLTR.fasta or the Arabidopsis genome file.
 
 The test.noLTR.fasta is a genome without LTR-RT while Arabidopsis thaliana genome contains LTR-RT. 
+
+These files can be located along with the example output in "Example_Files".
 
 
 ### Citations ###
