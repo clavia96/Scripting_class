@@ -48,7 +48,7 @@ Usage: LTR.sh -f {filename} -db {database} -t {no. of threads}
 -h              show this help message and exit
 
 ```
-Steps to run this script
+Steps to run this script on hopper
 
 +  Git clone this repository.
 +  Copy the desired genome fasta file to the working directory containing this Github repo.
