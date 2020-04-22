@@ -1,0 +1,28 @@
+All parameters met!
+
+##########################
+### LTR_retriever v2.8.5 ###
+##########################
+
+Contributors: Shujun Ou, Ning Jiang
+
+For LTR_retriever, please cite:
+
+	Ou S and Jiang N (2018). LTR_retriever: A Highly Accurate and Sensitive Program for Identification of Long Terminal Repeat Retrotransposons. Plant Physiol. 176(2): 1410-1422.
+
+For LAI, please cite:
+
+	Ou S, Chen J, Jiang N (2018). Assessing genome assembly quality using the LTR Assembly Index (LAI). Nucleic Acids Res. 2018;46(21):e126.
+
+Parameters: -genome test.fasta -inharvest test.fasta.harvest.scn -infinder test.fasta.finder.scn -nonTGCA test.fasta.harvest.nonTGCA.scn -threads 20 -noanno
+
+
+Mon Apr 20 22:53:23 CDT 2020	Dependency checking: All passed!
+Mon Apr 20 22:54:25 CDT 2020	LTR_retriever is starting from the Init step.
+Mon Apr 20 22:54:25 CDT 2020	The longest sequence ID in the genome contains 44 characters, which is longer than the limit (15)
+				Trying to reformat seq IDs...
+				Attempt 1...
+Mon Apr 20 22:54:25 CDT 2020	Seq ID conversion successful!
+
+Mon Apr 20 22:54:25 CDT 2020	Start to convert inputs...
+No LTR-RT found in genome!!

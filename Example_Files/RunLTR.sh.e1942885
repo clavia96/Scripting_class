@@ -1,0 +1,54 @@
+ModuleCmd_Load.c(208):ERROR:105: Unable to locate a modulefile for 'ncbi-blast/2.2.31'
+2020-04-21 21:43:21,646 -WARNING- No module named drmaa && grid computing is not available
+2020-04-21 21:43:21,801 -INFO- VARS: {'seq_type': 'nucl', 'min_coverage': 20, 'disable_pass2': False, 'tmp_dir': './tmp', 'processors': 20, 'sequence': 'TAIR10_chr_all.fas.fasta', 'no_library': False, 'p2_identity': 80.0, 'no_cleanup': False, 'force_write_hmmscan': False, 'p2_length': 80.0, 'prefix': 'TAIR10_chr_all.fas.fasta.gydb', 'max_evalue': 0.001, 'p2_coverage': 80.0, 'pass2_rule': '80-80-80', 'hmm_database': 'gydb', 'no_reverse': False}
+2020-04-21 21:43:21,801 -INFO- checking dependencies:
+2020-04-21 21:43:22,042 -INFO- hmmer	3.1b2	OK
+2020-04-21 21:43:22,090 -INFO- blastn	2.2.31+	OK
+2020-04-21 21:43:22,090 -INFO- Start classifying pipeline
+2020-04-21 21:43:22,887 -INFO- total 211 sequences
+2020-04-21 21:43:22,887 -INFO- translating `TAIR10_chr_all.fas.fasta` in six frames
+/tools/python-2.7.15/lib/python2.7/site-packages/Bio/Seq.py:2423: BiopythonWarning: Partial codon, len(sequence) not a multiple of three. Explicitly trim the sequence or add trailing N before translation. This may become an error in future.
+  BiopythonWarning)
+2020-04-21 21:43:24,432 -INFO- HMM scanning against `/gpfs01/home/olo0002/Scripting_class/TEsorter/database/GyDB2.hmm`
+2020-04-21 21:43:24,462 -INFO- Creating server instance (pp-1.6.6)
+2020-04-21 21:43:24,462 -INFO- Running on Python 2.7.15 linux2
+2020-04-21 21:43:27,512 -INFO- pp local server started with 20 workers
+2020-04-21 21:43:27,530 -INFO- Task 0 started
+2020-04-21 21:43:27,531 -INFO- Task 1 started
+2020-04-21 21:43:27,532 -INFO- Task 2 started
+2020-04-21 21:43:27,533 -INFO- Task 3 started
+2020-04-21 21:43:27,534 -INFO- Task 4 started
+2020-04-21 21:43:27,534 -INFO- Task 5 started
+2020-04-21 21:43:27,535 -INFO- Task 6 started
+2020-04-21 21:43:27,536 -INFO- Task 7 started
+2020-04-21 21:43:27,536 -INFO- Task 8 started
+2020-04-21 21:43:27,539 -INFO- Task 9 started
+2020-04-21 21:43:27,545 -INFO- Task 10 started
+2020-04-21 21:43:27,548 -INFO- Task 11 started
+2020-04-21 21:43:27,548 -INFO- Task 12 started
+2020-04-21 21:43:27,551 -INFO- Task 14 started
+2020-04-21 21:43:27,556 -INFO- Task 13 started
+2020-04-21 21:43:27,557 -INFO- Task 15 started
+2020-04-21 21:43:27,564 -INFO- Task 16 started
+2020-04-21 21:43:27,564 -INFO- Task 17 started
+2020-04-21 21:43:27,565 -INFO- Task 18 started
+2020-04-21 21:43:27,565 -INFO- Task 19 started
+2020-04-21 21:43:37,235 -INFO- generating gene anntations
+2020-04-21 21:43:37,804 -INFO- 197 sequences classified by HMM
+2020-04-21 21:43:37,804 -INFO- see protein domain sequences in `TAIR10_chr_all.fas.fasta.gydb.dom.faa` and annotation gff3 file in `TAIR10_chr_all.fas.fasta.gydb.dom.gff3`
+2020-04-21 21:43:37,804 -INFO- classifying the unclassified sequences by searching against the classified ones
+2020-04-21 21:43:37,829 -INFO- using the 80-80-80 rule
+2020-04-21 21:43:37,829 -INFO- run CMD: `makeblastdb -in ./tmp/pass1_classified.fa -dbtype nucl`
+2020-04-21 21:43:37,936 -INFO- run CMD: `blastn -query ./tmp/pass1_unclassified.fa -db ./tmp/pass1_classified.fa -out ./tmp/pass1_unclassified.fa.blastout -outfmt '6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen qcovs qcovhsp sstrand' -num_threads 20`
+2020-04-21 21:43:38,284 -INFO- 2 sequences classified in pass 2
+2020-04-21 21:43:38,284 -INFO- total 199 sequences classified.
+2020-04-21 21:43:38,284 -INFO- see classified sequences in `TAIR10_chr_all.fas.fasta.gydb.cls.tsv`
+2020-04-21 21:43:38,284 -INFO- writing library for RepeatMasker in `TAIR10_chr_all.fas.fasta.gydb.cls.lib`
+2020-04-21 21:43:38,370 -INFO- writing classified protein domains in `TAIR10_chr_all.fas.fasta.gydb.cls.pep`
+2020-04-21 21:43:38,412 -INFO- Summary of classifications:
+Order           Superfamily      # of Sequences# of Clade Sequences    # of Clades# of full Domains
+LTR             Copia                       121            115              5             59
+LTR             Gypsy                        78             77              5             39
+2020-04-21 21:43:38,413 -INFO- Pipeline done.
+2020-04-21 21:43:38,413 -INFO- cleaning the temporary directory ./tmp
+Warning: Permanently added 'node184,192.168.10.184' (RSA) to the list of known hosts.

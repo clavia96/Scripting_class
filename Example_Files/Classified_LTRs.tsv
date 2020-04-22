@@ -1,0 +1,200 @@
+#TE	Order	Superfamily	Clade	Complete	Strand	Domains
+1_CHROMOSOME:10610329..10614183|Copia	LTR	Copia	retrofit	no	+	AP|ty1/copia INT|retrofit RNaseH|retrofit
+1_CHROMOSOME:11148091..11152835|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:11789452..11794077|Copia	LTR	Copia	oryco	yes	+	GAG|oryco AP|oryco INT|oryco RT|oryco RNaseH|oryco
+1_CHROMOSOME:12406711..12410000|Copia	LTR	Copia	mixture	no	+	RT|tork RNaseH|retrofit
+1_CHROMOSOME:12813589..12816476|Copia	LTR	Copia	mixture	no	+	RT|sire RNaseH|copia
+1_CHROMOSOME:13019157..13023945|Copia	LTR	Copia	retrofit	no	-	AP|retrofit INT|retrofit RT|tork RNaseH|retrofit
+1_CHROMOSOME:13334466..13339870|Gypsy	LTR	Gypsy	reina	yes	+	GAG|reina AP|del RT|reina RNaseH|reina INT|reina CHR|retroelement
+1_CHROMOSOME:13439445..13448523|Copia	LTR	Copia	sire	yes	+	GAG|sire AP|sire INT|sire RT|sire RNaseH|sire ENV|sire
+1_CHROMOSOME:13507780..13515964|Gypsy	LTR	Gypsy	del	yes	-	GAG|del AP|del RT|del RNaseH|del INT|del CHR|retroelement
+1_CHROMOSOME:13559843..13564825|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:13659273..13667557|Gypsy	LTR	Gypsy	del	yes	+	GAG|del AP|del RT|del RNaseH|del INT|del
+1_CHROMOSOME:13818567..13823888|Gypsy	LTR	Gypsy	reina	yes	+	GAG|reina AP|reina RT|reina RNaseH|reina INT|reina CHR|retroelement
+1_CHROMOSOME:13883073..13890962|Gypsy	LTR	Gypsy	del	yes	+	GAG|del AP|del RT|del RNaseH|del INT|del CHR|retroelement
+1_CHROMOSOME:14019278..14024518|Gypsy	LTR	Gypsy	reina	yes	+	GAG|reina AP|reina RT|reina RNaseH|reina INT|reina CHR|all
+1_CHROMOSOME:14129671..14134851|Copia	LTR	Copia	tork	yes	-	GAG|tork AP|ty1/copia INT|tork RT|tork RNaseH|tork
+1_CHROMOSOME:14214747..14225656|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila ENV|athila
+1_CHROMOSOME:14432223..14442952|Gypsy	LTR	Gypsy	athila	no	+	GAG|athila AP|athila ENV|athila
+1_CHROMOSOME:15240543..15244711|Gypsy	LTR	Gypsy	crm	no	+	GAG|crm
+1_CHROMOSOME:15337662..15341830|Gypsy	LTR	Gypsy	crm	no	+	GAG|crm
+1_CHROMOSOME:16117829..16124076|Copia	LTR	Copia	sire	yes	+	GAG|sire AP|sire INT|sire RT|sire RNaseH|sire
+1_CHROMOSOME:16551721..16557069|Copia	LTR	Copia	retrofit	no	-	AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:16626036..16637234|Gypsy	LTR	Gypsy	tat	yes	-	GAG|tat AP|tat RT|tat RNaseH|tat INT|tat
+1_CHROMOSOME:16853318..16858040|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:17023916..17029257|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|oryco RNaseH|retrofit
+1_CHROMOSOME:17203926..17206318|Copia	LTR	Copia	oryco	no	+	GAG|oryco AP|oryco RNaseH|tork
+1_CHROMOSOME:17255285..17265289|Gypsy	LTR	Gypsy	tat	yes	+	GAG|tat AP|tat RT|tat RNaseH|tat INT|tat
+1_CHROMOSOME:17443081..17446790|Copia	LTR	Copia	retrofit	no	+	AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:17473527..17476671|Gypsy	LTR	Gypsy	reina	no	+	GAG|reina
+1_CHROMOSOME:17520597..17525126|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:17676607..17681382|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:18828527..18833280|Copia	LTR	Copia	oryco	no	+	GAG|oryco AP|oryco INT|oryco RT|oryco
+1_CHROMOSOME:21244324..21249198|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:21346162..21351041|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|tork RNaseH|retrofit
+1_CHROMOSOME:21524995..21529850|Copia	LTR	Copia	oryco	no	-	GAG|oryco AP|oryco INT|oryco RT|oryco
+1_CHROMOSOME:22100644..22105329|Copia	LTR	Copia	retrofit	no	-	AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:26366607..26371668|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+1_CHROMOSOME:3780765..3785720|Copia	LTR	Copia	oryco	no	+	GAG|oryco AP|oryco INT|oryco RT|oryco
+1_CHROMOSOME:4406006..4411120|unknown	LTR	Copia	oryco	no	-	RNaseH|oryco
+1_CHROMOSOME:7717356..7722547|Copia	LTR	Copia	oryco	no	+	GAG|oryco AP|oryco INT|oryco RT|oryco
+1_CHROMOSOME:9476002..9480634|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+2_CHROMOSOME:12539441..12541817|Copia	LTR	Copia	oryco	no	-	GAG|oryco AP|oryco RNaseH|tork
+2_CHROMOSOME:1388832..1393901|Copia	LTR	Copia	tork	no	-	RT|tork RNaseH|tork
+2_CHROMOSOME:1395260..1399516|unknown	LTR	Copia	pCretro	no	+	RNaseH|pCretro
+2_CHROMOSOME:16330..24007|Gypsy	LTR	Gypsy	del	yes	-	GAG|del AP|del RT|del RNaseH|del INT|del CHR|retroelement
+2_CHROMOSOME:1906864..1912112|Copia	LTR	Copia	tork	yes	-	GAG|tork AP|ty1/copia INT|tork RT|tork RNaseH|tork
+2_CHROMOSOME:2075308..2080607|Gypsy	LTR	Gypsy	reina	yes	-	GAG|reina AP|reina RT|reina RNaseH|reina INT|reina CHR|retroelement
+2_CHROMOSOME:2793407..2799747|Gypsy	LTR	Gypsy	crm	yes	+	GAG|crm AP|crm RT|crm RNaseH|crm INT|crm
+2_CHROMOSOME:2902330..2907117|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|ty1/copia INT|retrofit RT|tork RNaseH|retrofit
+2_CHROMOSOME:3687124..3692178|Copia	LTR	Copia	tork	yes	-	GAG|tork AP|tork INT|tork RT|tork RNaseH|tork
+2_CHROMOSOME:3752539..3763187|Gypsy	LTR	Gypsy	tat	no	-	GAG|tat AP|tat RNaseH|tat INT|tat
+2_CHROMOSOME:3873692..3888488|Gypsy	LTR	Gypsy	athila	yes	-	GAG|athila AP|athila RT|athila RNaseH|athila INT|athila
+2_CHROMOSOME:4061046..4065458|Copia	LTR	Copia	tork	no	+	GAG|tork INT|tork RT|tork RNaseH|tork
+2_CHROMOSOME:4186081..4194762|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila
+2_CHROMOSOME:4197160..4211222|Gypsy	LTR	Gypsy	athila	yes	-	GAG|athila AP|athila RT|athila RNaseH|athila INT|athila ENV|athila
+2_CHROMOSOME:42164..49787|Gypsy	LTR	Gypsy	del	yes	-	GAG|del AP|del RT|del RNaseH|del INT|del CHR|retroelement
+2_CHROMOSOME:4230743..4236512|Copia	LTR	Copia	tork	yes	+	GAG|tork AP|oryco INT|tork RT|tork RNaseH|tork
+2_CHROMOSOME:4236658..4244396|Gypsy	LTR	Gypsy	del	yes	+	GAG|del AP|del RT|del RNaseH|del INT|del CHR|retroelement
+2_CHROMOSOME:4709690..4716011|Gypsy	LTR	Gypsy	athila	no	+	GAG|athila AP|athila
+2_CHROMOSOME:4799641..4802568|unknown	LTR	Gypsy	reina	no	+	GAG|reina
+2_CHROMOSOME:5062484..5067403|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|tork RNaseH|retrofit
+2_CHROMOSOME:5073847..5078418|Copia	LTR	Copia	tork	no	+	GAG|tork AP|ty1/copia INT|tork RNaseH|tork
+2_CHROMOSOME:5394710..5399649|Copia	LTR	Copia	tork	no	+	AP|pseudovirus INT|copia RT|tork RNaseH|tork
+2_CHROMOSOME:5852422..5857428|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|ty1/copia INT|retrofit RT|tork RNaseH|retrofit
+2_CHROMOSOME:5984986..5996552|Gypsy	LTR	Gypsy	athila	no	+	GAG|athila AP|athila ENV|athila
+2_CHROMOSOME:6113207..6124745|Gypsy	LTR	Gypsy	tat	no	+	GAG|tat AP|tat RT|tat RNaseH|tat
+2_CHROMOSOME:6422230..6427295|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|oryco RNaseH|retrofit
+2_CHROMOSOME:6819006..6823730|Copia	LTR	Copia	oryco	yes	+	GAG|oryco AP|oryco INT|oryco RT|oryco RNaseH|oryco
+2_CHROMOSOME:6909755..6914586|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+2_CHROMOSOME:7448762..7454289|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+2_CHROMOSOME:7598600..7602611|Copia	LTR	Copia	oryco	no	-	AP|oryco INT|oryco RT|oryco
+2_CHROMOSOME:909733..914338|unknown	LTR	Copia	pCretro	no	+	RNaseH|pCretro
+2_CHROMOSOME:9121958..9125818|Copia	LTR	Copia	tork	yes	+	GAG|tork AP|tork INT|tork RT|tork RNaseH|tork
+2_CHROMOSOME:9187492..9195279|Copia	LTR	Copia	tork	yes	-	GAG|tork AP|oryco INT|tork RT|tork RNaseH|tork
+2_CHROMOSOME:926131..929956|Copia	LTR	Copia	tork	no	-	GAG|tork AP|tork INT|tork RT|tork
+3_CHROMOSOME:11016111..11020804|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+3_CHROMOSOME:11122707..11127674|Copia	LTR	Copia	retrofit	no	-	AP|ty1/copia INT|retrofit RT|oryco RNaseH|retrofit
+3_CHROMOSOME:11335553..11341895|Copia	LTR	Copia	tork	no	+	AP|pseudovirus INT|copia RT|tork RNaseH|tork
+3_CHROMOSOME:11578845..11586481|Gypsy	LTR	Gypsy	reina	yes	+	GAG|reina AP|reina RT|reina RNaseH|reina INT|reina CHR|retroelement
+3_CHROMOSOME:11652697..11657743|Copia	LTR	Copia	retrofit	no	+	AP|ty1/copia INT|retrofit RT|retrofit RNaseH|sire
+3_CHROMOSOME:11664969..11669787|Copia	LTR	Copia	oryco	no	+	GAG|oryco AP|oryco INT|oryco RT|oryco
+3_CHROMOSOME:11697283..11702262|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+3_CHROMOSOME:12211822..12225829|Gypsy	LTR	Gypsy	athila	yes	-	GAG|athila AP|athila RT|athila RNaseH|athila INT|athila ENV|athila
+3_CHROMOSOME:12243854..12255282|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila ENV|athila
+3_CHROMOSOME:12478085..12486325|Gypsy	LTR	Gypsy	del	yes	+	GAG|del AP|del RT|del RNaseH|del INT|del CHR|retroelement
+3_CHROMOSOME:12549509..12555918|Gypsy	LTR	Gypsy	crm	yes	-	GAG|crm AP|crm RT|crm RNaseH|crm INT|crm
+3_CHROMOSOME:12576780..12589320|Gypsy	LTR	Gypsy	reina	yes	-	GAG|reina AP|reina RT|reina RNaseH|reina INT|reina CHR|retroelement
+3_CHROMOSOME:12580262..12586834|Gypsy	LTR	Gypsy	reina	yes	-	GAG|reina AP|reina RT|reina RNaseH|reina INT|reina CHR|retroelement
+3_CHROMOSOME:12853595..12861862|Gypsy	LTR	Gypsy	del	yes	+	GAG|del AP|del RT|del RNaseH|del INT|del CHR|retroelement
+3_CHROMOSOME:13186250..13194564|unknown	LTR	Gypsy	athila	no	-	ENV|athila
+3_CHROMOSOME:13240356..13252197|Gypsy	LTR	Gypsy	tat	yes	+	GAG|tat AP|tat RT|tat RNaseH|tat INT|tat
+3_CHROMOSOME:13369174..13374107|Copia	LTR	Copia	oryco	no	+	GAG|oryco AP|oryco INT|oryco RT|oryco
+3_CHROMOSOME:13429766..13436148|Gypsy	LTR	Gypsy	crm	no	+	AP|crm RT|crm RNaseH|crm INT|crm
+3_CHROMOSOME:13561769..13568405|Copia	LTR	Copia	tork	no	-	AP|tork INT|tork RT|tork RNaseH|tork
+3_CHROMOSOME:13674752..13680457|Gypsy	LTR	Gypsy	reina	yes	+	GAG|reina AP|reina RT|reina RNaseH|reina INT|reina CHR|retroelement
+3_CHROMOSOME:14073146..14081963|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila
+3_CHROMOSOME:14616108..14623209|Copia	LTR	Copia	sire	no	+	GAG|sire RNaseH|sire ENV|sire
+3_CHROMOSOME:14671141..14675856|Copia	LTR	Copia	oryco	yes	+	GAG|oryco AP|oryco INT|oryco RT|oryco RNaseH|oryco
+3_CHROMOSOME:14729395..14734605|Gypsy	LTR	Gypsy	crm	yes	-	GAG|crm AP|crm RT|crm RNaseH|crm INT|crm
+3_CHROMOSOME:15377102..15382206|Copia	LTR	Copia	tork	yes	+	GAG|tork AP|tork INT|tork RT|tork RNaseH|tork
+3_CHROMOSOME:15540532..15549243|Copia	LTR	Copia	sire	yes	+	GAG|sire AP|sire INT|sire RT|sire RNaseH|sire
+3_CHROMOSOME:15591669..15600821|Copia	LTR	Copia	sire	yes	+	GAG|sire AP|sire INT|sire RT|sire RNaseH|sire ENV|sire
+3_CHROMOSOME:15621873..15626854|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+3_CHROMOSOME:15711476..15722693|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila ENV|athila
+3_CHROMOSOME:15768787..15773747|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+3_CHROMOSOME:15814611..15818285|unknown	LTR	Copia	oryco	no	+	RNaseH|oryco
+3_CHROMOSOME:16691859..16697596|Copia	LTR	Copia	tork	yes	-	GAG|tork AP|ty1/copia INT|tork RT|tork RNaseH|tork
+3_CHROMOSOME:16809187..16814152|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+3_CHROMOSOME:16957465..16962731|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|tork RNaseH|retrofit
+3_CHROMOSOME:18734248..18739392|unknown	LTR	Copia	pCretro	no	+	RNaseH|pCretro
+3_CHROMOSOME:18791152..18796088|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+3_CHROMOSOME:22059535..22064329|Copia	LTR	Copia	oryco	no	+	GAG|oryco AP|oryco INT|oryco RT|oryco
+3_CHROMOSOME:22232175..22236802|Copia	LTR	Copia	oryco	no	+	GAG|oryco AP|oryco INT|oryco RT|oryco
+3_CHROMOSOME:22695566..22700521|Copia	LTR	Copia	oryco	no	-	GAG|oryco AP|oryco INT|oryco RT|oryco
+3_CHROMOSOME:23100313..23104852|Copia	LTR	Copia	oryco	no	-	GAG|oryco AP|oryco INT|oryco RT|oryco
+3_CHROMOSOME:3807306..3812643|Gypsy	LTR	Gypsy	reina	yes	-	GAG|reina AP|reina RT|reina RNaseH|reina INT|reina CHR|retroelement
+3_CHROMOSOME:8537353..8543559|Gypsy	LTR	Gypsy	crm	no	+	GAG|crm AP|crm RT|crm RNaseH|crm
+3_CHROMOSOME:9226633..9231377|Copia	LTR	Copia	oryco	yes	+	GAG|oryco AP|oryco INT|oryco RT|oryco RNaseH|oryco
+4_CHROMOSOME:10899527..10904692|unknown	LTR	Copia	pCretro	no	+	RNaseH|pCretro
+4_CHROMOSOME:10992996..10998058|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|retrofit INT|retrofit RT|tork RNaseH|retrofit
+4_CHROMOSOME:11363556..11368653|Copia	LTR	Copia	tork	yes	-	GAG|tork AP|ty1/copia INT|tork RT|tork RNaseH|tork
+4_CHROMOSOME:11676468..11681340|Copia	LTR	Copia	retrofit	no	-	GAG|retrofit INT|retrofit RT|tork RNaseH|retrofit
+4_CHROMOSOME:11820160..11825725|Gypsy	LTR	Gypsy	reina	no	-	GAG|reina AP|reina RT|reina RNaseH|reina CHR|retroelement
+4_CHROMOSOME:1312401..1317218|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+4_CHROMOSOME:13624548..13627187|Copia	LTR	Copia	mixture	no	+	RT|tork RNaseH|retrofit
+4_CHROMOSOME:13624548..13631872|Copia	LTR	Copia	retrofit	no	+	RT|tork RNaseH|retrofit GAG|retrofit AP|retrofit INT|retrofit
+4_CHROMOSOME:14258825..14263830|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|retrofit INT|retrofit RT|tork RNaseH|retrofit
+4_CHROMOSOME:15559246..15562581|Gypsy	LTR	Gypsy	reina	no	-	GAG|reina
+4_CHROMOSOME:1565685..1567403|Copia	LTR	Copia	retrofit	no	+	GAG|retrofit
+4_CHROMOSOME:1669366..1680247|Gypsy	LTR	Gypsy	tat	yes	-	GAG|tat AP|tat RT|tat RNaseH|tat INT|tat
+4_CHROMOSOME:1684997..1695918|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila ENV|athila
+4_CHROMOSOME:1749270..1755807|Copia	LTR	Copia	tork	no	+	AP|tork INT|tork RT|tork RNaseH|tork
+4_CHROMOSOME:1943797..1955321|Gypsy	LTR	Gypsy	tat	yes	+	GAG|tat AP|tat RT|tat RNaseH|tat INT|tat
+4_CHROMOSOME:2001189..2010967|Gypsy	LTR	Gypsy	tat	yes	+	GAG|tat AP|tat RT|tat RNaseH|tat INT|tat
+4_CHROMOSOME:2188979..2194314|Copia	LTR	Copia	retrofit	no	+	AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+4_CHROMOSOME:2198165..2203993|Copia	LTR	Copia	sire	yes	-	GAG|sire AP|sire INT|sire RT|sire RNaseH|sire
+4_CHROMOSOME:3173302..3183106|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila ENV|athila
+4_CHROMOSOME:3344833..3354744|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila ENV|athila
+4_CHROMOSOME:3907466..3915199|Copia	LTR	Copia	sire	no	+	GAG|sire AP|sire RT|sire RNaseH|sire ENV|sire
+4_CHROMOSOME:3929252..3935831|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila
+4_CHROMOSOME:3987766..3997961|Gypsy	LTR	Gypsy	athila	no	-	AP|athila ENV|athila
+4_CHROMOSOME:4133384..4142040|Gypsy	LTR	Gypsy	athila	yes	+	GAG|athila AP|athila RT|athila RNaseH|athila INT|athila
+4_CHROMOSOME:4239123..4249773|Gypsy	LTR	Gypsy	athila	no	+	GAG|athila AP|athila ENV|athila
+4_CHROMOSOME:4502301..4514086|Gypsy	LTR	Gypsy	tat	yes	-	GAG|tat AP|tat RT|tat RNaseH|tat INT|tat
+4_CHROMOSOME:4677142..4684195|Gypsy	LTR	Gypsy	del	no	-	GAG|del AP|del RT|del RNaseH|del
+4_CHROMOSOME:5063538..5074228|Gypsy	LTR	Gypsy	tat	no	-	GAG|tat RT|tat RNaseH|tat INT|tat
+4_CHROMOSOME:5127101..5135152|Gypsy	LTR	Gypsy	del	yes	-	GAG|del AP|del RT|del RNaseH|del INT|del CHR|retroelement
+4_CHROMOSOME:5303774..5309049|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|oryco RNaseH|retrofit
+4_CHROMOSOME:5822426..5827300|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+4_CHROMOSOME:5905482..5916987|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|tork RNaseH|retrofit
+4_CHROMOSOME:6467413..6473067|Copia	LTR	Copia	tork	yes	+	GAG|tork AP|ty1/copia INT|tork RT|tork RNaseH|tork
+4_CHROMOSOME:6588726..6593808|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+4_CHROMOSOME:6723347..6728790|Copia	LTR	Copia	retrofit	yes	+	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+4_CHROMOSOME:6914662..6919598|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|tork RNaseH|retrofit
+4_CHROMOSOME:7359462..7364591|unknown	LTR	Copia	pCretro	no	+	RNaseH|pCretro
+4_CHROMOSOME:7816826..7821792|unknown	LTR	Copia	pCretro	no	+	RNaseH|pCretro
+4_CHROMOSOME:9908996..9914046|unknown	LTR	Copia	pCretro	no	-	RNaseH|pCretro
+5_CHROMOSOME:10308307..10314018|Gypsy	LTR	Gypsy	reina	yes	-	GAG|reina AP|reina RT|reina RNaseH|reina INT|reina CHR|retroelement
+5_CHROMOSOME:10400732..10405873|unknown	LTR	Copia	pCretro	no	-	RNaseH|pCretro
+5_CHROMOSOME:10764243..10772498|Gypsy	LTR	Gypsy	del	yes	+	GAG|del AP|del RT|del RNaseH|del INT|del CHR|retroelement
+5_CHROMOSOME:11042770..11057642|Gypsy	LTR	Gypsy	tat	no	-	GAG|tat AP|tat RT|tat RNaseH|tat
+5_CHROMOSOME:11086024..11099205|Gypsy	LTR	Gypsy	tat	yes	+	GAG|tat AP|tat RT|tat RNaseH|tat INT|tat
+5_CHROMOSOME:11159506..11166120|Gypsy	LTR	Gypsy	athila	no	+	GAG|athila AP|athila
+5_CHROMOSOME:11320516..11331861|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila ENV|athila
+5_CHROMOSOME:11503489..11512862|Gypsy	LTR	Gypsy	tat	no	-	AP|tat RT|tat RNaseH|tat INT|tat
+5_CHROMOSOME:11527310..11538273|Gypsy	LTR	Gypsy	tat	yes	+	GAG|tat AP|tat RT|tat RNaseH|tat INT|tat
+5_CHROMOSOME:11686010..11697351|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila ENV|athila
+5_CHROMOSOME:11810265..11821592|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila ENV|athila
+5_CHROMOSOME:11903693..11915221|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila RT|athila RNaseH|athila INT|athila ENV|athila
+5_CHROMOSOME:12007211..12018604|Gypsy	LTR	Gypsy	athila	no	+	GAG|athila AP|athila ENV|athila
+5_CHROMOSOME:12029290..12043305|Gypsy	LTR	Gypsy	athila	yes	-	GAG|athila AP|athila RT|athila RNaseH|athila INT|athila ENV|athila
+5_CHROMOSOME:12113704..12120134|Copia	LTR	Copia	tork	no	+	AP|pseudovirus INT|copia RT|tork RNaseH|tork
+5_CHROMOSOME:12518417..12531276|Gypsy	LTR	Gypsy	athila	yes	-	GAG|athila AP|athila RT|athila RNaseH|athila INT|athila ENV|athila
+5_CHROMOSOME:12616218..12621580|Copia	LTR	Copia	retrofit	no	+	AP|ty1/copia INT|retrofit RT|oryco RNaseH|retrofit
+5_CHROMOSOME:12639602..12650823|Gypsy	LTR	Gypsy	athila	no	+	GAG|athila AP|athila ENV|athila
+5_CHROMOSOME:13142244..13148925|Gypsy	LTR	Gypsy	athila	no	-	AP|athila
+5_CHROMOSOME:13261021..13272510|Gypsy	LTR	Gypsy	athila	yes	-	GAG|athila AP|athila RT|athila RNaseH|athila INT|athila
+5_CHROMOSOME:13994795..14000224|Copia	LTR	Copia	tork	no	+	GAG|tork AP|tork RT|tork RNaseH|tork
+5_CHROMOSOME:14822456..14825836|Copia	LTR	Copia	mixture	no	+	RT|tork RNaseH|retrofit
+5_CHROMOSOME:15175728..15180948|Copia	LTR	Copia	mixture	no	+	GAG|tork AP|oryco RT|sire
+5_CHROMOSOME:15646197..15651170|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|tork RNaseH|retrofit
+5_CHROMOSOME:17090770..17095674|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|retrofit INT|retrofit RT|retrofit RNaseH|retrofit
+5_CHROMOSOME:17596764..17605846|Copia	LTR	Copia	sire	yes	+	GAG|sire AP|sire INT|sire RT|sire RNaseH|sire ENV|sire
+5_CHROMOSOME:18142156..18146897|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|retrofit RNaseH|retrofit
+5_CHROMOSOME:18233631..18238198|Copia	LTR	Copia	oryco	no	+	GAG|oryco AP|oryco INT|oryco RT|oryco
+5_CHROMOSOME:18490608..18495233|Copia	LTR	Copia	oryco	yes	-	GAG|oryco AP|oryco INT|oryco RT|oryco RNaseH|oryco
+5_CHROMOSOME:22002017..22006884|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|tork RNaseH|retrofit
+5_CHROMOSOME:22613355..22618266|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|tork RNaseH|retrofit
+5_CHROMOSOME:22911048..22916161|unknown	LTR	Copia	oryco	no	+	RNaseH|oryco
+5_CHROMOSOME:2441254..2443637|Copia	LTR	Copia	retrofit	no	+	RT|retrofit RNaseH|retrofit
+5_CHROMOSOME:26258300..26260067|Copia	LTR	Copia	retrofit	no	+	RT|retrofit RNaseH|retrofit
+5_CHROMOSOME:4208083..4213084|Copia	LTR	Copia	oryco	no	-	GAG|oryco AP|oryco INT|oryco RT|oryco
+5_CHROMOSOME:64772..71199|Copia	LTR	Copia	tork	no	-	AP|pseudovirus INT|copia RT|tork RNaseH|tork
+5_CHROMOSOME:8624509..8629381|Copia	LTR	Copia	retrofit	yes	-	GAG|retrofit AP|ty1/copia INT|retrofit RT|tork RNaseH|retrofit
+5_CHROMOSOME:8927997..8934328|Copia	LTR	Copia	tork	no	+	AP|pseudovirus INT|copia RT|tork RNaseH|tork
+5_CHROMOSOME:9211109..9218667|Gypsy	LTR	Gypsy	athila	no	-	GAG|athila AP|athila
+5_CHROMOSOME:9272140..9274532|Copia	LTR	Copia	oryco	no	-	GAG|oryco AP|oryco RNaseH|tork
+5_CHROMOSOME:9381704..9386621|unknown	LTR	Copia	pCretro	no	-	RNaseH|pCretro
+2_CHROMOSOME:31487..36441|unknown	LTR	Copia	unknown	none	?	none
+4_CHROMOSOME:2090158..2094315|Gypsy	LTR	Gypsy	unknown	none	?	none

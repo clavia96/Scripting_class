@@ -1,0 +1,108 @@
+All parameters met!
+
+##########################
+### LTR_retriever v2.8.5 ###
+##########################
+
+Contributors: Shujun Ou, Ning Jiang
+
+For LTR_retriever, please cite:
+
+	Ou S and Jiang N (2018). LTR_retriever: A Highly Accurate and Sensitive Program for Identification of Long Terminal Repeat Retrotransposons. Plant Physiol. 176(2): 1410-1422.
+
+For LAI, please cite:
+
+	Ou S, Chen J, Jiang N (2018). Assessing genome assembly quality using the LTR Assembly Index (LAI). Nucleic Acids Res. 2018;46(21):e126.
+
+Parameters: -genome TAIR10_chr_all.fas -inharvest TAIR10_chr_all.fas.harvest.scn -infinder TAIR10_chr_all.fas.finder.scn -nonTGCA TAIR10_chr_all.fas.harvest.nonTGCA.scn -threads 20 -noanno
+
+
+Tue Apr 21 21:34:06 CDT 2020	Dependency checking: All passed!
+Tue Apr 21 21:34:39 CDT 2020	LTR_retriever is starting from the Init step.
+Tue Apr 21 21:34:44 CDT 2020	Start to convert inputs...
+				Total candidates: 1110
+				Total uniq candidates: 1044
+
+Tue Apr 21 21:34:46 CDT 2020	Module 1: Start to clean up candidates...
+				Sequences with 10 missing bp or 0.8 missing data rate will be discarded.
+				Sequences containing tandem repeats will be discarded.
+
+Tue Apr 21 21:35:06 CDT 2020	952 clean candidates remained
+
+Tue Apr 21 21:35:06 CDT 2020	Modules 2-5: Start to analyze the structure of candidates...
+				The terminal motif, TSD, boundary, orientation, age, and superfamily will be identified in this step.
+
+Tue Apr 21 21:36:00 CDT 2020	Intact LTR-RT found: 233
+
+Tue Apr 21 21:36:05 CDT 2020	Module 6: Start to analyze truncated LTR-RTs...
+				Truncated LTR-RTs without the intact version will be retained in the LTR-RT library.
+				Use -notrunc if you don't want to keep them.
+
+Tue Apr 21 21:36:05 CDT 2020	65 truncated LTR-RTs found
+Tue Apr 21 21:36:30 CDT 2020	30 truncated LTR sequences have added to the library
+
+Tue Apr 21 21:36:30 CDT 2020	Module 5: Start to remove DNA TE and LINE transposases, and remove plant protein sequences...
+				Total library sequences: 358
+Tue Apr 21 21:39:09 CDT 2020	Retained clean sequence: 351
+
+Tue Apr 21 21:39:09 CDT 2020	Sequence clustering for TAIR10_chr_all.fas.ltrTE ...
+Tue Apr 21 21:39:09 CDT 2020	Unique lib sequence: 350
+
+Tue Apr 21 21:39:12 CDT 2020	Module 7: Start to analyze non-TGCA LTR-RT candidates...
+				Total non-TGCA candidates: 1806
+Tue Apr 21 21:39:12 CDT 2020	Start to remove non-TGCA candidates that are >=60% identical to TGCA LTRs...
+Tue Apr 21 21:39:42 CDT 2020	Total uniq non-TGCA candidates: 1273
+
+Tue Apr 21 21:39:42 CDT 2020	Module 1: Start to clean up candidates...
+				Sequences with 10 missing bp or 0.8 missing data rate will be discarded.
+				Sequences containing tandem repeats will be discarded.
+
+Tue Apr 21 21:39:44 CDT 2020	1242 clean non-TGCA candidates remained
+
+Tue Apr 21 21:39:44 CDT 2020	Modules 2-5: Start to analyze the structure of candidates...
+				The terminal motif, TSD, boundary, orientation, age, and superfamily will be identified in this step.
+
+Tue Apr 21 21:40:30 CDT 2020	Intact non-TGCA LTR-RT found: 3
+
+Tue Apr 21 21:40:31 CDT 2020	Module 6: Start to analyze truncated LTR-RTs...
+				Truncated LTR-RTs without the intact version will be retained in the LTR-RT library.
+				Use -notrunc if you don't want to keep them.
+
+Tue Apr 21 21:40:31 CDT 2020	40 truncated LTR-RTs found
+Tue Apr 21 21:40:48 CDT 2020	69 truncated LTR sequences have added to the library
+
+Tue Apr 21 21:40:48 CDT 2020	Module 5: Start to remove DNA TE and LINE transposases, and remove plant protein sequences...
+				Total library sequences: 77
+Tue Apr 21 21:41:15 CDT 2020	Retained clean sequence: 73
+
+Tue Apr 21 21:41:15 CDT 2020	Module 6: Start to remove nested insertions in internal regions...
+Tue Apr 21 21:43:07 CDT 2020	Raw internal region size (bit): 1139182
+				Clean internal region size (bit): 1078962
+
+Tue Apr 21 21:43:07 CDT 2020	Sequence number of the redundant LTR-RT library: 744
+				The redundant LTR-RT library size (bit): 1644436
+
+Tue Apr 21 21:43:07 CDT 2020	Module 8: Start to make non-redundant library...
+
+Tue Apr 21 21:43:11 CDT 2020	Final LTR-RT library entries: 405
+				Final LTR-RT library size (bit): 1204311
+
+Tue Apr 21 21:43:11 CDT 2020	Total intact LTR-RTs found: 211
+				Total intact non-TGCA LTR-RTs found: 45
+
+Tue Apr 21 21:43:12 CDT 2020	All analyses were finished!
+
+##############################
+####### Result files #########
+##############################
+
+Table output for intact LTR-RTs (detailed info)
+	TAIR10_chr_all.fas.pass.list (All LTR-RTs)
+	TAIR10_chr_all.fas.nmtf.pass.list (Non-TGCA LTR-RTs)
+	TAIR10_chr_all.fas.pass.list.gff3 (GFF3 format for intact LTR-RTs)
+
+LTR-RT library
+	TAIR10_chr_all.fas.LTRlib.redundant.fa (All LTR-RTs with redundancy)
+	TAIR10_chr_all.fas.LTRlib.fa (All non-redundant LTR-RTs)
+	TAIR10_chr_all.fas.nmtf.LTRlib.fa (Non-TGCA LTR-RTs)
+LTR-RT found in Genome!!
