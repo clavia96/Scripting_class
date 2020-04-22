@@ -35,7 +35,7 @@ $ bash LTR.sh -h
 
 This script is used to annotate and classify LTR retrotransposons.
 
-Usage: LTR.bash -f {filename} -db {database} -t {no. of threads}
+Usage: LTR.sh -f {filename} -db {database} -t {no. of threads}
 
  -f FILENAME    input TE sequences in fasta format with either .fasta, .faa, .fas, .fna or .afasta extension [required].
 
