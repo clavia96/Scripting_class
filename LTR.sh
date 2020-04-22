@@ -28,7 +28,7 @@ done
 #Confirm if all parameters are present
 if [ $# -ne 6 ]; then
     echo "Error: must input parameters correctly"
-    echo "./Script.bash -h for more information"
+    echo "./LTR.sh -h for more information"
 fi
 
 #use user input and strip white space from file name
@@ -38,7 +38,7 @@ infile=$(echo $file | tr -d ' ')
 #check if file exist in path
 if [ ! -f "$infile" ]; then
     echo "Error: $infile does not exist in path"
-    echo "./Script.bash -h for more information"
+    echo "./LTR.sh -h for more information"
     exit 0
 fi
 
@@ -49,7 +49,7 @@ case "$ext" in
     ;;
 *)
     echo "Error: File must be in fasta format!!"
-    echo "./Script.bash -h for more information"
+    echo "./LTR.sh -h for more information"
     exit 0
     ;;
 esac
@@ -61,7 +61,7 @@ case "$database" in
     ;;
 *)
     echo "Database unknown"
-    echo "./Script.bash -h for more information"
+    echo "./LTR.sh -h for more information"
     exit 0
     ;;
 esac
@@ -84,19 +84,15 @@ gt suffixerator -db $infile -indexname $infile -tis -suf -lcp -des -ssp -sds -dn
 gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 4 -maxtsd 6 -similar 85 -vic 10 -seed 20 -motif TGCA -motifmis 1 > $infile.harvest.scn
 gt ltrharvest -index $infile -seqids yes -minlenltr 100 -maxlenltr 7000 -mintsd 4 -maxtsd 6 -similar 85 -vic 10 -seed 20 > $infile.harvest.nonTGCA.scn
 
-module load perl/5.26.1
 module load ltrfinder/1.07
 
-perl LTR_FINDER_parallel -seq $infile -harvest_out -threads $thread
-
-#combines all .scn file
-cat $infile.harvest.scn $infile.finder.combine.scn >> $infile.harvest.combine.scn
+ltr_finder -D 15000 -d 1000 -l 100 -L 12000 -p 20 -C -M 0.85 $infile > $infile.finder.scn
 
 #ltr retriever is used to filter out false positive LTR-RT in the .scn files and outputs intact elements.
 
 module load trf/4.09
 
-./LTR_retriever -genome $infile -inharvest $infile.harvest.combine.scn -nonTGCA $infile.harvest.nonTGCA.scn -threads $thread -noanno
+./LTR_retriever -genome $infile -inharvest $infile.harvest.scn -infinder $infile.finder.scn -nonTGCA $infile.harvest.nonTGCA.scn -threads $thread -noanno
 
 #if there are intact LTR-RT found it continues, if not it exits
 if [ -s "$infile.pass.list" ]
