@@ -1,5 +1,5 @@
 https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas
 
-NB: Before running please shorten sequence names 
-Example - *1 CHROMOSOME dumped from ADB: Feb/3/09 16:9; last updated: 2009-02-02* should be shortened to *1_chromosome.
+NB: Before running please shorten sequence names in the fasta file. 
+Example - 1 CHROMOSOME dumped from ADB: Feb/3/09 16:9; last updated: 2009-02-02 should be shortened to 1_chromosome e.t.c.
 Failure to do so may cause the script not to run!!
