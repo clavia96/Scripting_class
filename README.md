@@ -55,7 +55,8 @@ Steps to run this script
 +  Edit the RunLTR.sh and input the parameters as stated above.
 +  Submit to the queue.
 
-All parameters must be correctly placed for script to work!!
+All parameters must be correctly placed for script to work!!. 
+Also, names on fasta file shouldn't be more than 10 characters long as that will lead to no result output!!
 
 NB : We STRONGLY advise you submit to the queue as genome files maybe too large to run directly on the node!!
 
