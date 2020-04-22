@@ -28,7 +28,7 @@ To edit the dependencies modules:
 
 ASC dependencies are similar to HOPPER dependencies. However, ncbi-blast will need to be printed as blast+ in this case, and anaconda environments will need to be loaded. These environments are “anaconda/3-2020.02” and “anaconda/2-5.0.1”, and should include the other dependencies necessary for running the script.
 
-NB : This script was unable to be fully run on the ASC due to the necessity of the biopython dependency being unavailable. Load the "anaconda/3-2020.02" environment and call Perl to successfully run LTRharvest and LTR_finder on the ASC.
+NB : This script was unable to be fully run on the ASC due to the necessity of the parallel python dependency being unavailable on ASC.
 
 ### Usage ### 
 
@@ -79,12 +79,12 @@ If you are not able to run this script see the directory "Example_Files" for exa
 
 ### Test-Files ###
 
-To test this script, user can use the test.noLTR.fasta or the Arabidopsis genome file.
+To test this script, we used test.noLTR.fasta and the Arabidopsis genome file (link to download provided above).
+Users can use same files or any genome of their choice.
 
 The test.noLTR.fasta is a genome without LTR-RT while Arabidopsis thaliana genome contains LTR-RT. 
 
-These files can be located along with the example output in "Example_Files".
-
+The example output files for test.noLTR.fasta and the Arabidopsis genome file are located in "Example_Files" directory
 
 ### Citations ###
 
