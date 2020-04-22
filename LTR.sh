@@ -4,7 +4,7 @@
 Help ()
 {
 printf "This script is used to annotate and classify LTR retrotransposons.\n\n"
-printf "Usage: Script.bash -f {filename} -db {database} -t {no. of threads}\n\n"
+printf "Usage: LTR.sh -f {filename} -db {database} -t {no. of threads}\n\n"
 printf " -f FILENAME       input TE sequences in fasta format with either .fasta, .faa, .fas, .fna or .afasta extension [required].\n"
 printf "\n-db DATABASE     input one of these - rexdb, rexdb-plant, rexdb-metazoa, gydb [required].\n"
 printf "\n-t  THREADS      number of processors to use, number between 20 - 30 is preferable [required].\n"
